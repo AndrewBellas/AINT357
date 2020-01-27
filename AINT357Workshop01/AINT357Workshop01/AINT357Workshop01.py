@@ -109,6 +109,64 @@ print(newList[0])
 #TODO: ADD MORE HERE
 #====================
 
+#Arrays
+#Declaring an array:
+
+#Declare array
+newArray = [1, 2, 3]
+
+#Add an element to the end of the array
+newArray.append(4)
+
+#Iterate through and print results:
+for x in newArray:
+    print(x)
+
+
+#Dictionaries:
+#Dictionaries are a data structure which is unordered, changeable, and indexed. They have both keys and values
+
+#Example dictionary:
+newDictionary = {
+    "Animal" : "Cat",          #Mapping the value of cat to the attribute animal
+    "Breed"  : "Russian Blue", #Mapping the value Russian Blue to the attribute breed
+    "Age"    : "4"             #Mapping the value of 4 to the attribute age
+}
+
+#Printing dictionary:
+print(newDictionary)
+
+#Getting specific attribute of the dictionary by calling the key/attribute:
+print(newDictionary["Animal"]) #Will output Cat
+
+#Can also use a .get() method to obtain the value from a key/attribute:
+print(newDictionary.get("Animal")) #Will output Cat
+
+#Change the value of an attribute/key:
+newDictionary["Animal"] = "Dog" #The animal attribute/key will now have the value of Dog
+
+#Print all KEYS/ATTRIBUTES in the dictionary:
+for x in newDictionary:
+    print(x)
+
+#Print all VALUES of the dictionary:
+for x in newDictionary:
+    print(newDictionary[x])
+
+#Check if a specific key is in the dictionary:
+if "Breed" in newDictionary:
+    print("Key is present in this dictionary")
+
+#Add new item to dictionary by adding a new index key/attribute and then adding its value:
+newDictionary["Gender"] = "Female" # Adds "Gender" : "Female" to the dictionary
+
+#Remove an item from the dictionary:
+newDictionary.pop("Animal") #Remove the animal attribute/key and its value from the dictionary
+
+#Tuples:
+
+
+
 #8. I/O to/from console:
 
 #Input:
