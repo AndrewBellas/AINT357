@@ -9,7 +9,7 @@ cellSize = []
 cellPointerIdx = 0
 
 #Enter your code here
-code = ">>++.,"
+code = ">>++.,>>><<++-"
 
 
 #Append the length of the byte list for the length of the code string, and set the default values of the cells in the finite tape to zero
@@ -62,6 +62,7 @@ for x in code:
 
 
     #TODO: Add loop control
+    #TODO: Add "Accepted character" and throw error if non accepted character is given
 
 
 
