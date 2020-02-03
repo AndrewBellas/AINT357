@@ -9,22 +9,28 @@ cellSize = []
 cellPointerIdx = 0
 
 #Enter your code here
-code = ">>++."
+code = ">>++.,"
+
 
 #Append the length of the byte list for the length of the code string, and set the default values of the cells in the finite tape to zero
-for i in code:
-    cellSize.append(0)
+def populateBytes():
+    for i in code:
+        cellSize.append(0)
+
+populateBytes()
+
 
 #Define method "populateBytes" -> creates the finite tape for the program
-def populateBytes():
+def showBytes():
     print(cellSize)
+
 
 
 #Simple parser for the code string
 for x in code:
 
     #Populate the finite tape = to size of the code string to execute
-    populateBytes()
+    showBytes()
 
     #If the code string has character ">", increment the data pointer by 1
     if (x == ">"):
@@ -52,7 +58,16 @@ for x in code:
     #If the code string has character ",", take an input and store the input in the cell the data pointer is currently pointing to 
     elif(x == ","):
         a = input()
-        cellSize[cellPointerIdx] = a
+        cellSize[cellPointerIdx] = int(a)
 
 
     #TODO: Add loop control
+
+
+
+#EXIT LOOP:
+
+#Output final state of the tape (after loop iterations are complete)
+print()
+print("Final state of tape")
+showBytes()
